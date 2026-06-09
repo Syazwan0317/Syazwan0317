@@ -1,80 +1,220 @@
-<div align="center">
+````markdown
+# 🌐 Personal Blog Portfolio
 
-# 🌟 PROJECT_NAME
-
-### One-line value proposition that explains why this project exists.
-
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
-[![Version](https://img.shields.io/badge/version-1.0-green.svg)]()
-[![Stars](https://img.shields.io/github/stars/USERNAME/REPO)]()
-
-</div>
+> A responsive personal blog website developed for **CSD34203 Special Topics in Software Development**.
 
 ---
 
-## 🎯 The Problem
+# 📖 Project Overview
 
-Most users struggle with:
+This project is a personal blog and portfolio website designed to showcase my background, skills, projects, and experiences in software development.
 
-- Problem #1
-- Problem #2
-- Problem #3
+The website provides visitors with information about me, allows them to read blog articles, and offers a way to connect through a contact page.
 
-This project was built to solve these challenges in a simple and efficient way.
+This project demonstrates web development skills while applying entrepreneurial concepts such as creativity, problem-solving, initiative, and value creation.
 
 ---
 
-## ✨ What Makes This Different?
+# 🎯 Project Objectives
 
-| Traditional Solutions | This Project |
-|----------------------|--------------|
-| Complex setup | One-command start |
-| Heavy dependencies | Lightweight |
-| Hard to customize | Highly flexible |
-| Expensive | Open source |
+- Create a responsive personal portfolio website.
+- Share knowledge and experiences through blog posts.
+- Practice Git and GitHub version control.
+- Develop a platform for personal branding and professional growth.
 
 ---
 
-## 🧠 Core Idea
+# ✨ Features
 
-> Explain the philosophy behind the project.
+## 🏠 Home Page
+- Personal introduction
+- Hero section
+- Navigation menu
+- Quick access to website content
 
-Describe *why* the project exists, not just what it does.
+## 👨‍💻 About Page
+- Personal background
+- Educational information
+- Technical skills
+- Career interests
 
-Example:
+## 📝 Blog Page
+- Technology-related blog posts
+- Clean and responsive layout
+- User-friendly reading experience
 
-"This tool automates repetitive development tasks so engineers can focus on solving real problems instead of managing workflows."
+## 📬 Contact Page
+- Contact form
+- Communication platform
+- Professional networking opportunity
+
+## 📱 Responsive Design
+- Mobile-friendly layout
+- Tablet compatibility
+- Desktop optimization
+
+## 🌙 Additional Features
+- Dark mode toggle
+- Interactive user interface
+- Modern design principles
 
 ---
 
-## ⚡ Features
+# 💡 Entrepreneurial Value
 
-- 🚀 Fast performance
-- 🔒 Secure by default
-- 🧩 Plugin architecture
-- 📊 Built-in analytics
-- 🌐 Cross-platform support
+This project serves as a digital branding platform that helps students and aspiring developers present their skills and achievements professionally.
+
+## Entrepreneurial Skills Demonstrated
+
+| Skill | Description |
+|---------|------------|
+| Initiative | Developed additional features beyond the minimum requirements |
+| Creativity & Innovation | Created a modern and user-friendly design |
+| Problem-Solving | Solved responsiveness and design challenges |
+| Opportunity Recognition | Built a platform for personal branding and professional visibility |
+| Risk-Taking & Experimentation | Explored modern web development techniques |
+| Planning & Organization | Structured project files and repository professionally |
+| Communication | Documented project clearly through GitHub README |
+| Adaptability | Improved the project through testing and refinement |
+| Value Creation | Provides a useful platform for showcasing skills and knowledge |
 
 ---
 
-## 🏗 Architecture
+# 🛠 Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- Git
+- GitHub
+
+---
+
+# 📂 Project Structure
 
 ```text
-┌─────────────┐
-│   Client    │
-└──────┬──────┘
-       │
-       ▼
-┌─────────────┐
-│ API Layer   │
-└──────┬──────┘
-       │
-       ▼
-┌─────────────┐
-│ Core Engine │
-└──────┬──────┘
-       │
-       ▼
-┌─────────────┐
-│ Database    │
-└─────────────┘
+personal-blog/
+│
+├── index.html
+├── about.html
+├── blog.html
+├── contact.html
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   └── script.js
+│
+├── images/
+│
+└── README.md
+````
+
+---
+
+# 🚀 How to Run the Project
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/Syazwan0317/personal-blog.git
+```
+
+### Open the Project
+
+1. Open the project folder.
+2. Launch `index.html` using any web browser.
+3. Navigate through the pages.
+
+---
+
+# 📸 Screenshots
+
+## Home Page
+
+![Home Page](images/homepage.png)
+
+## About Page
+
+![About Page](images/aboutpage.png)
+
+## Blog Page
+
+![Blog Page](images/blogpage.png)
+
+## Contact Page
+
+![Contact Page](images/contactpage.png)
+
+---
+
+# 🔄 Development Process
+
+### Commit History Examples
+
+```bash
+Initial project setup and homepage creation
+Added About and Blog pages
+Implemented responsive design
+Added dark mode functionality
+Updated README documentation
+```
+
+The project was developed incrementally using Git version control with meaningful commit messages to track progress and improvements.
+
+---
+
+# 🌍 Future Improvements
+
+* User authentication system
+* Blog search functionality
+* Comment section for posts
+* Database integration
+* Content Management System (CMS)
+* AI-powered article recommendations
+* Enhanced animations and user experience
+
+---
+
+# 📚 Course Information
+
+**Course:** CSD34203 Special Topics in Software Development
+
+**Project Title:** GitHub Portfolio (Personal Blog Page)
+
+**Course Learning Outcome (CLO3):**
+Demonstrate entrepreneurial mindset through project execution and documentation.
+
+**Faculty:** Faculty of Informatics and Computing (FIK)
+
+---
+
+# 👤 Author
+
+**Name:** SYAZWAN BIN SHAHARUDDIN
+
+**Student ID:** 077169
+
+**Programme:** SOFTWARE DEVELOPMENT
+
+**Faculty:** Faculty of Informatics and Computing (FIK)
+
+---
+
+# 🔗 Repository
+
+GitHub Repository:
+
+https://github.com/Syazwan0317/personal-blog
+
+---
+
+# ⭐ Acknowledgement
+
+This project was developed as part of the requirements for **CSD34203 Special Topics in Software Development**. It reflects my learning journey in software development, web technologies, and project management using GitHub.
+
+Thank you for visiting my repository. Feel free to explore the project and provide feedback.
+
+```
+```
