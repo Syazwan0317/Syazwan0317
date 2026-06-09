@@ -2,23 +2,25 @@ const menuToggle = document.getElementById("menuToggle");
 const navLinks = document.getElementById("navLinks");
 
 /* MOBILE MENU */
+if(menuToggle){
 menuToggle.addEventListener("click", () => {
-navLinks.style.display =
-navLinks.style.display === "flex" ? "none" : "flex";
+navLinks.classList.toggle("active");
 });
+}
 
-/* TYPING ANIMATION */
+/* TYPING EFFECT */
 const text = "Software Developer in Progress...";
 let i = 0;
 
 function typeEffect(){
-document.querySelector(".typing").innerHTML =
-text.substring(0, i);
+const typing = document.querySelector(".typing");
+if(!typing) return;
 
+typing.innerHTML = text.substring(0, i);
 i++;
 
 if(i <= text.length){
-setTimeout(typeEffect, 80);
+setTimeout(typeEffect, 70);
 }
 }
 
