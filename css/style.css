@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-/* ================= BASE ================= */
+/* ================= RESET ================= */
 *{
 margin:0;
 padding:0;
@@ -9,11 +9,12 @@ font-family:'Poppins', sans-serif;
 scroll-behavior:smooth;
 }
 
+/* ================= BODY ================= */
 body{
 min-height:100vh;
 color:#e5e7eb;
 
-/* 🌟 CLEAN MODERN MESH BACKGROUND */
+/* 🌟 CLEAN MODERN BACKGROUND */
 background:
 radial-gradient(circle at 20% 20%, rgba(59,130,246,0.25), transparent 40%),
 radial-gradient(circle at 80% 30%, rgba(147,51,234,0.20), transparent 45%),
@@ -50,19 +51,17 @@ list-style:none;
 .nav-links a{
 text-decoration:none;
 color:#cbd5e1;
-font-weight:400;
 transition:0.3s;
-position:relative;
+font-weight:400;
 }
 
-/* hover effect */
 .nav-links a:hover{
 color:#60a5fa;
 }
 
 /* ================= HERO ================= */
 .hero{
-height:85vh;
+min-height:85vh;
 display:flex;
 justify-content:center;
 align-items:center;
@@ -71,24 +70,20 @@ padding:20px;
 }
 
 .glass{
-max-width:650px;
+max-width:700px;
 padding:40px;
 border-radius:18px;
 background:rgba(255,255,255,0.06);
 border:1px solid rgba(255,255,255,0.1);
 backdrop-filter: blur(15px);
 box-shadow:0 20px 40px rgba(0,0,0,0.4);
-animation: fadeIn 1s ease-in-out;
 }
 
+/* ================= TEXT ================= */
 .hero h1{
 font-size:40px;
 font-weight:600;
 margin-bottom:10px;
-}
-
-.highlight{
-color:#60a5fa;
 }
 
 .hero p{
@@ -97,12 +92,8 @@ color:#cbd5e1;
 margin-top:10px;
 }
 
-/* ================= TYPING ================= */
-.typing{
-margin:10px 0;
-font-size:18px;
-color:#93c5fd;
-min-height:24px;
+.highlight{
+color:#60a5fa;
 }
 
 /* ================= BUTTON ================= */
@@ -140,7 +131,7 @@ background:rgba(255,255,255,0.06);
 border:1px solid rgba(255,255,255,0.08);
 backdrop-filter: blur(10px);
 transition:0.3s;
-animation: fadeIn 1s ease-in-out;
+text-align:center;
 }
 
 .card:hover{
@@ -156,6 +147,31 @@ color:#ffffff;
 .card p{
 font-size:13px;
 color:#cbd5e1;
+}
+
+/* ================= SKILLS (FIXED CENTER) ================= */
+.skills-grid{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:12px;
+margin-top:15px;
+}
+
+.skill{
+padding:10px 15px;
+background:rgba(255,255,255,0.08);
+border:1px solid rgba(255,255,255,0.12);
+border-radius:10px;
+backdrop-filter: blur(10px);
+color:#e5e7eb;
+font-size:14px;
+transition:0.3s;
+}
+
+.skill:hover{
+transform:translateY(-3px);
+border-color:#60a5fa;
 }
 
 /* ================= FORM ================= */
