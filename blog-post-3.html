@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript ES6 Features Explained - My Tech Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h2>MyBlog</h2>
+        <button class="mobile-menu-btn">☰</button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button id="themeBtn">🌙</button>
+    </nav>
+</header>
+
+<article class="post-full">
+    <h1>JavaScript ES6 Features Explained</h1>
+    <div class="post-meta">Published on May 25, 2026 | By Your Name</div>
+    <div class="post-full-image"></div>
+
+    <p>
+        ES6 (ECMAScript 2015) revolutionized JavaScript development with powerful new features that make code more readable, 
+        maintainable, and efficient. In this article, we'll explore the most important ES6 features you should know.
+    </p>
+
+    <h2>Let and Const</h2>
+    <p>
+        ES6 introduced let and const to replace var. The main differences:
+    </p>
+    <ul style="margin-left: 2rem; line-height: 2;">
+        <li><strong>let:</strong> Block-scoped variable that can be reassigned</li>
+        <li><strong>const:</strong> Block-scoped variable that cannot be reassigned (but objects can be modified)</li>
+        <li><strong>var:</strong> Function-scoped and prone to hoisting issues (avoid using)</li>
+    </ul>
+
+    <h2>Arrow Functions</h2>
+    <p>
+        Arrow functions provide a concise syntax and automatically bind the this keyword:
+    </p>
+    <p style="background: var(--card-bg); padding: 1rem; border-radius: 5px; font-family: monospace; overflow-x: auto;">
+        const add = (a, b) =&gt; a + b; // Concise syntax<br>
+        const greet = name =&gt; `Hello, ${name}!`; // Single parameter
+    </p>
+
+    <h2>Template Literals</h2>
+    <p>
+        Template literals make string interpolation easier with backticks and ${} syntax:
+    </p>
+    <p style="background: var(--card-bg); padding: 1rem; border-radius: 5px; font-family: monospace; overflow-x: auto;">
+        const name = 'John';<br>
+        const message = `Hello, ${name}! You are ${age} years old.`;
+    </p>
+
+    <h2>Destructuring</h2>
+    <p>
+        Destructuring allows you to extract values from objects and arrays more easily:
+    </p>
+    <p style="background: var(--card-bg); padding: 1rem; border-radius: 5px; font-family: monospace; overflow-x: auto;">
+        const {name, age} = person; // Object destructuring<br>
+        const [first, second] = array; // Array destructuring
+    </p>
+
+    <h2>Classes</h2>
+    <p>
+        ES6 introduced a cleaner syntax for creating classes and objects:
+    </p>
+    <p style="background: var(--card-bg); padding: 1rem; border-radius: 5px; font-family: monospace; overflow-x: auto;">
+        class Person {<br>
+        &nbsp;&nbsp;constructor(name) {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;this.name = name;<br>
+        &nbsp;&nbsp;}<br>
+        &nbsp;&nbsp;greet() {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;return `Hello, ${this.name}`;<br>
+        &nbsp;&nbsp;}<br>
+        }
+    </p>
+
+    <h2>Promises and Async/Await</h2>
+    <p>
+        Promises handle asynchronous operations, and async/await provides a cleaner way to work with them:
+    </p>
+    <p style="background: var(--card-bg); padding: 1rem; border-radius: 5px; font-family: monospace; overflow-x: auto;">
+        async function fetchData() {<br>
+        &nbsp;&nbsp;try {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;const data = await fetch('/api/data');<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;return data.json();<br>
+        &nbsp;&nbsp;} catch (error) {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;console.error('Error:', error);<br>
+        &nbsp;&nbsp;}<br>
+        }
+    </p>
+
+    <h2>Modules</h2>
+    <p>
+        ES6 modules allow you to organize code into separate files:
+    </p>
+    <p style="background: var(--card-bg); padding: 1rem; border-radius: 5px; font-family: monospace; overflow-x: auto;">
+        // math.js<br>
+        export const add = (a, b) =&gt; a + b;<br>
+        export const subtract = (a, b) =&gt; a - b;<br><br>
+        // main.js<br>
+        import { add, subtract } from './math.js';
+    </p>
+
+    <h2>Spread Operator</h2>
+    <p>
+        The spread operator (...) is useful for working with arrays and objects:
+    </p>
+    <p style="background: var(--card-bg); padding: 1rem; border-radius: 5px; font-family: monospace; overflow-x: auto;">
+        const arr1 = [1, 2, 3];<br>
+        const arr2 = [...arr1, 4, 5]; // [1, 2, 3, 4, 5]<br>
+        const newObj = {...oldObj, newProp: 'value'};
+    </p>
+
+    <h2>Why ES6 Matters</h2>
+    <ul style="margin-left: 2rem; line-height: 2;">
+        <li>More readable and maintainable code</li>
+        <li>Reduces boilerplate code</li>
+        <li>Better error handling with promises</li>
+        <li>Improved organization with modules</li>
+        <li>Industry standard for modern JavaScript</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>
+        ES6 features have become essential to modern JavaScript development. Mastering these features will make you a better 
+        developer and help you write more efficient, readable code. Continue exploring advanced features like generators, 
+        decorators, and proxies to deepen your JavaScript knowledge!
+    </p>
+
+    <div style="text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border-color);">
+        <p style="margin-bottom: 1rem;">Ready to learn more?</p>
+        <a href="blog.html" class="btn">Back to Blog</a>
+    </div>
+</article>
+
+<footer>
+    <p>&copy; 2026 My Tech Blog. All rights reserved.</p>
+    <p>Built with ❤️ using HTML, CSS & JavaScript</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
